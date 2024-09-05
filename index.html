@@ -2,44 +2,70 @@
 <html>
 <head>
     <title>My Personal Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 </head>
 <body>
+
+<!-- Header -->
     <header>
-        <h1>Welcome to My Personal Portfolio</h1>
+        <div class="logo">
+            <h1>My Portfolio</h1>
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#welcome-section">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+<!-- End Header -->
 
-    <nav id="navbar">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-
+<!-- Main -->
     <main>
-        <section id="welcome-section">
+
+    <!-- Welcome Section -->
+        <section id="welcome-section" class="section">
+            <img src="https://via.placeholder.com/200" alt="Profile Picture">
             <h1>About Me</h1>
             <p>Write a brief description about yourself here.</p>
         </section>
+    <!-- End Welcome Section -->
 
-        <section id="projects">
-            <h2 class="project-title">My Projects</h2>
-            <ul>
-                <li><a href="#">Project 1</a></li>
-                <li><a href="#">Project 2</a></li>
-                <li><a href="#">Project 3</a></li>
-            </ul>
+    <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="projects-title">My Projects</h2>
+            <div class="project-tile">
+                <a id="profile-link" href="https://github.com/sturgis-steele" target="_blank">My Github</a>
+            </div>
         </section>
+    <!-- End Projects Section -->
 
-        <section>
+    <!-- Services Section -->
+        <section id="services" class="section">
             <h2>Contact Me</h2>
             <p>Include your contact information here.</p>
         </section>
-    </main>
+    <!-- End Services Section -->
 
+    <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p>Include your contact information here.</p>
+        </section>
+    <!-- End Contact Section -->
+
+    </main>
+<!-- End Main -->
+
+<!-- Footer -->
     <footer>
-        <p>&copy; 2022 My Personal Portfolio. All rights reserved.</p>
+        <p>&copy; 2024 My Personal Portfolio. All rights reserved.</p>
     </footer>
+<!-- End Footer -->
+
 </body>
 </html>

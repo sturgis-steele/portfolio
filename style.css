@@ -1,0 +1,127 @@
+:root {
+    --primary-color: f5f5f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /*background-color: #f5f5f5;*/
+    background-color: var(--primary-color);
+    margin: 0px;
+    padding: 0px;
+}
+
+/*header*/
+header {
+    height: 100px;
+    width: 100vw;
+    background-color: var(--primary-color);
+    color: #000000;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index:1000 ;
+}
+
+/*navbar*/
+#navbar {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    list-style-type: none
+}
+
+#navbar ul li {
+    padding: 9px 12px;
+    height: fit-content;
+    width: fit-content;
+    border: 1px solid #000000;
+    align-items: center;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+/*end navbar*/
+
+/*end header*/
+
+/*main*/
+main {
+    padding: 108px 15px;
+    height: fit-content;
+    width: 100%;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    border: 5px solid #000000;
+}
+
+.section {
+    padding: 10px;
+    height: auto;
+    width: auto;
+}
+
+/*about*/
+#welcome-section {
+    grid-column: span 2;
+    border: 1px solid blue;
+}
+/*end about*/
+
+/*skills*/
+#projects {
+
+    border: 1px solid red;
+}
+/*end skills*/
+
+/*services*/
+#services {
+
+    border: 1px solid green;
+}
+/*end services*/
+
+/*contact*/
+#contact {
+
+    border: 1px solid yellow;
+}
+/*end contact*/
+
+/*end main*/
+
+/*footer*/
+footer {
+    height: 60px;
+    width: 100%;
+    background-color: ;
+    color: #000000;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+}
+/*end footer*/
