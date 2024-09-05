@@ -36,6 +36,7 @@ header {
     height: fit-content;
     display: flex;
     align-items: center;
+    top: 0;
 }
 
 #navbar ul {
@@ -75,37 +76,50 @@ main {
     border: 5px solid #000000;
 }
 
-.section {
+main section{
     padding: 10px;
     height: auto;
     width: auto;
 }
 
+.grid-span2 {
+    grid-column: span 2;
+}
+
 /*about*/
 #welcome-section {
-    grid-column: span 2;
-    border: 1px solid blue;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:1rem;
+}
+
+#welcome-section .id-container {
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
 }
 /*end about*/
 
 /*skills*/
 #projects {
 
-    border: 1px solid red;
+    border: 1px solid black;
 }
 /*end skills*/
 
 /*services*/
 #services {
 
-    border: 1px solid green;
+    border: 1px solid black;
 }
 /*end services*/
 
 /*contact*/
 #contact {
 
-    border: 1px solid yellow;
+    border: 1px solid black;
 }
 /*end contact*/
 
@@ -115,7 +129,7 @@ main {
 footer {
     height: 60px;
     width: 100%;
-    background-color: ;
+    background-color: var(--primary-color); ;
     color: #000000;
     padding: 12px 15px;
     display: flex;
@@ -125,3 +139,23 @@ footer {
     bottom: 0;
 }
 /*end footer*/
+
+/*media queries*/
+
+@media screen and (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        height: 80px;
+    }
+
+    main {
+        padding: 88px 15px;
+    }
+}
+
+/*end media queries*/
