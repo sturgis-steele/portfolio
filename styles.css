@@ -1,16 +1,22 @@
 :root {
-    --primary-color: f5f5f5;
+    --primary-color: #f5f5f5;
+    --secondary-color: #000000;
+    --borders: 
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Open Sans", sans-serif;
+}
+
+html {
+    font-size: 16px; /* or 100% */
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    /*background-color: #f5f5f5;*/
     background-color: var(--primary-color);
     margin: 0px;
     padding: 0px;
@@ -21,7 +27,7 @@ header {
     height: 100px;
     width: 100vw;
     background-color: var(--primary-color);
-    color: #000000;
+    color: var(--secondary-color);
     padding: 12px 15px;
     display: flex;
     align-items: center;
@@ -48,18 +54,21 @@ header {
 }
 
 #navbar ul li {
-    padding: 9px 12px;
     height: fit-content;
     width: fit-content;
-    border: 1px solid #000000;
     align-items: center;
 }
 
 #navbar ul li a {
+    padding: 9px 18px;
     text-decoration: none;
     color: #000000;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
+}
+
+#navbar ul li a:hover {
+    border: 2px solid #000000;
 }
 /*end navbar*/
 
@@ -94,12 +103,32 @@ main section{
     gap:1rem;
 }
 
-#welcome-section .id-container {
+#welcome-section #profile {
     margin-bottom: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
+    padding: 1rem;
+    width: fit-content;
+    display: flex;
+    border: 1px solid black;
 }
+
+#welcome-section #profile img {
+    width: 9rem;
+    height: 13.5rem;
+}
+
+#welcome-section #profile h3 {
+    padding-top: .2rem;
+}
+
+#welcome-section #profile p {
+    margin-top: -.2rem;
+    border: 1px solid black;
+}
+#welcome-section #profile .profile-container2 {
+    padding-left: .5rem;
+    padding-top: 2.1rem;
+}
+
 /*end about*/
 
 /*skills*/
