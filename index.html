@@ -1,112 +1,261 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>My Personal Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">  
-<!-- Google Code Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-<!-- End Google Code Font-->
-<!-- Google Open Sans Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-<!-- End Google Open Sans Font -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- LaTeX -->
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<!-- End LaTeX -->
-    <meta charset="UTF-8">
+<html lang="en">
+  <head>
+    <title>Personal Portfolio</title>
+    <meta name="description" content="Sturgis Steele" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <!-- Google Code Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End Google Code Font-->
+
+    <!-- Google Open Sans Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End Google Open Sans Font -->
+
+    <!-- Google Icons -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <!-- end Google Icons-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-</head>
-<body>
+    <!-- Mathjax -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- End Mathjax -->
+    <meta charset="UTF-8" />
+  </head>
+  <body>
 
-<!-- Header -->
+    <!-- Header -->
     <header>
-        <nav id="navbar">
-                <a href="#welcome-section" class="nav-links-left">About</a>
-                <a href="#projects" class="nav-links-left">Projects</a>
-                <a href="#services" class="nav-links-right">Services</a>
-                <a href="#contact" class="nav-links-right">Contact</a>
-        </nav>
+      <nav id="navbar">
+        <a href="#welcome-section" class="nav-links-left">Home</a>
+        <a href="#projects" class="nav-links-left">Projects</a>
+        <a href="#services" class="nav-links-right">Services</a>
+        <a href="#contact" class="nav-links-right">Contact</a>
+      </nav>
     </header>
-<!-- End Header -->
+    <!-- End Header -->
 
-<!-- Main -->
+    <!-- Main -->
     <main>
-    <!-- Welcome Section -->
-        <section id="welcome-section" class="grid-span3">
-            <div id="profile" class="grid-span2">
-                <div class="profile-container1">
-                    <h2>Profile</h2>
-                    <img src="https://via.placeholder.com/200" alt="Profile Picture">
-                    <h3>Name</h3>
-                    <p>Steele, Sturgis Scott</p>
-                </div>
-                <div class="profile-container2">
-                    <h3>Planet</h3>
-                    <p>Earth</p>
-                    <h3>D.O.B</h3>
-                    <p>██████████</p>
-                    <h3>Sex</h3>
-                    <p>M</p>
-                    <h3>Height</h3>
-                    <p>██████</p>
-                </div>    
+
+      <!-- Welcome Section -->
+      <section id="welcome-section" class="grid-span3">
+        <div id="section-title" class="grid-span4">
+          <h1>About</h1>
+        </div>
+        <div id="profile" class="grid-span2">
+          <h2 class="grid-span2">Profile</h2>
+          <div id="profile-container1">
+            <img src="https://via.placeholder.com/200" alt="Profile Picture" />
+            <h3>Name</h3>
+            <p>Steele, Sturgis Scott</p>
+          </div>
+          <div id="profile-container2">
+            <h3>Technologies:</h3>
+            <ul>
+              <li>
+                <i id="icon" class="devicon-python-plain" alt="Python"></i>
+                <p>-Python</p>
+              </li>
+              <li>
+                <i id="icon" class="devicon-godot-plain" alt="Godot"></i>
+                <p>-GDScript</p>
+              </li>
+              <li>
+                <i id="icon" class="devicon-html5-plain" alt="HTML5"></i>
+                <p>-HTML</p>
+              </li>
+              <li>
+                <i id="icon" class="devicon-css3-plain" alt="CSS3"></i>
+                <p>-CSS</p>
+              </li>
+              <li>
+            <i id="icon" class="devicon-git-plain" alt="Git"></i>
+            <p>-Git</p>
+              </li>
+            </ul>
+
+            <h3>Education:</h3>
+            <p>Student of Data Science</p>
+            <p>-UTSA</p>
+          </div>
+        </div>
+        <div id="about" class="grid-span2">
+          <p>
+            I am a passionate software developer creating software and
+            technologies that solve integral issues in society and improve
+            humanity as a whole.
+          </p>
+
+          <p>
+            Currently I'm working on <strong>SE AI</strong>, an educational
+            platform integrating <strong>Gamification</strong>,
+            <strong>AI</strong>, and <strong>Blockchain</strong> technologies to
+            immerse students in interactive learning experiences worldwide.
+          </p>
+
+          <p>Let’s build something amazing together!</p>
+        </div>
+      </section>
+      <!-- End Welcome Section -->
+
+      <!-- Projects Section -->
+      <section id="projects" class="grid-span3">
+        <div id="section-title" class="grid-span4">
+          <h1>Projects</h1>
+        </div>
+        <!-- Project 1 -->
+        <div id="column-grid-layout">
+          <div id="project-tile" class="grid-span2">
+            <div id="quest-for-knowledge1">
+              <h3>Godot Game Development</h3>
+              <img
+                src="media/quest-for-knowledge.png"
+                alt="Project Screenshot"
+              />
             </div>
-            <div id="about" class="grid-span2">
-                <h2>About Me</h2>
-                <p>
-                    Hi! I'm a passionate <strong>software developer</strong> and <strong>data science student</strong> at UTSA, with a deep love for <strong>technology</strong> and an insatiable curiosity to understand how things work. 
-                </p>
-
-                <p>
-                    I actively contribute to <a href="https://github.com" target="_blank">open-source communities</a> like <strong>GitHub</strong> and <strong>Hugging Face</strong>, where I work on everything from <strong>AI tool integration</strong> to <strong>video game development</strong> using the Godot engine. My expertise includes <strong>AI-powered trading algorithms</strong>, <strong>automation</strong>, and developing software that solves real-world problems.
-                </p>
-
-                <p>
-                    Outside of coding, I explore <strong>genetic workflows</strong> and ways to <strong>future-proof businesses</strong> through digital transformation. I also enjoy <strong>long-distance running</strong> to stay active and focused.
-                </p>
-
-                <p>
-                    Let’s build something amazing together!
-                </p>
+            <div id="quest-for-knowledge2">
+              <p>
+                Developed a top-down 16-bit style video game using the Godot
+                engine. Focused on creating scalable architecture using
+                GDScript, allowing for template-based enemy behaviors and
+                separate scripts for special AI. The game also incorporates
+                AI-driven NPCs and custom game logic.
+              </p>
             </div>
-        </section>
-    <!-- End Welcome Section -->
+            <a
+              id="profile-link"
+              href="https://github.com/sturgis-steele"
+              target="_blank"
+              >My Github</a
+            >
+          </div>
+          <!-- End Project 1 -->
 
-    <!-- Projects Section -->
-        <section id="projects" class="section">
-            <h2 class="projects-title">My Projects</h2>
-            <div class="project-tile">
-                <a id="profile-link" href="https://github.com/sturgis-steele" target="_blank">My Github</a>
+          <!-- Project 2 -->
+          <div id="project-tile" class="grid-span2">
+            <div id="in-progress1">
+              <h3>in progress..</h3>
             </div>
-        </section>
-    <!-- End Projects Section -->
+            <div id="in-progress1">
+              <p>
+                █████████ █ ████████ ██████ █████ █████ ████ █████ ███ █████
+                ███████ ███████ ██ ████████ ████████ ████████████ █████
+                █████████ ████████ ███ ██████████████ █████ █████████ ███
+                ████████ ███████ ███ ███████ ███ ███ ████ ████ ████████████
+                █████████ ████ ███ ██████ ████ ██████
+              </p>
+            </div>
+            <a
+              id="profile-link"
+              href="https://github.com/sturgis-steele"
+              target="_blank"
+              >My Github</a
+            >
+          </div>
+        </div>
+        <!-- End Project 2 -->
 
-    <!-- Services Section -->
-        <section id="services" class="section">
-            <h2>Contact Me</h2>
-            <p>Include your contact information here.</p>
-        </section>
-    <!-- End Services Section -->
+        <p>
+          For more of my work, check out my
+          <a href="https://github.com/your-github-profile" target="_blank"
+            >GitHub</a
+          >.
+        </p>
+      </section>
+      <!-- End Projects Section -->
 
-    <!-- Contact Section -->
-        <section id="contact" class="section">
-            <h2>Contact Me</h2>
-            <p>Include your contact information here.</p>
-        </section>
-    <!-- End Contact Section -->
+      <!-- Services Section -->
+      <section id="services" class="section">
+        <h2>Contact Me</h2>
+        <p>
+          If you're interested in collaborating or have any inquiries, feel free
+          to reach out. I'm always open to discussing new opportunities in
+          software development, AI, and technology. You can contact me via:
+        </p>
+        <ul>
+          <li>
+            <strong>Email:</strong>
+            <a href="mailto:youremail@example.com">youremail@example.com</a>
+          </li>
+          <li>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank"
+              >LinkedIn Profile</a
+            >
+          </li>
+          <li>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/your-github-profile" target="_blank"
+              >GitHub Profile</a
+            >
+          </li>
+        </ul>
 
+        <h3>My Business: Steele Electronic Repairs</h3>
+        <p>
+          I also run <strong>Steele Electronic Repairs</strong>, where I provide
+          expert services for electronic repairs, troubleshooting, and system
+          optimizations. If you're in need of tech repair services, feel free to
+          check out the business:
+        </p>
+        <p>
+          <a href="https://steele-electronic-repairs.com" target="_blank"
+            >Visit Steele Electronic Repairs</a
+          >
+        </p>
+      </section>
+      <!-- End Services Section -->
+
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>Include your contact information here.</p>
+      </section>
+      <!-- End Contact Section -->
     </main>
-<!-- End Main -->
+    <!-- End Main -->
 
-<!-- Footer -->
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 My Personal Portfolio. All rights reserved.</p>
+      <p>&copy; 2024 My Personal Portfolio. All rights reserved.</p>
     </footer>
-<!-- End Footer -->
-
-</body>
+    <!-- End Footer -->
+  </body>
 </html>
