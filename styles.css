@@ -101,17 +101,16 @@ header {
 
 /*main*/
 main {
-    padding: 108px 15px;
+    padding: 9rem 6rem;
     height: fit-content;
     width: 100%;
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(3, 1fr);
-    border: 5px solid #000000;
 }
 
 main section{
-    padding: 10px;
+    padding: 1rem;
     height: auto;
     width: auto;
 }
@@ -120,18 +119,24 @@ main section{
     grid-column: span 2;
 }
 
-/*about*/
+.grid-span3 {
+    grid-column: span 3;
+}
+
 #welcome-section {
-    border: 1px solid black;
+    height: 50vh;
+    border: var(--borders);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap:1rem;
 }
 
+/*profile*/
 #welcome-section #profile {
     margin-bottom: 1rem;
-    padding: 1rem;
+    padding: 1.2rem 1.5rem;
     width: fit-content;
+    height: fit-content;
     display: flex;
     border: 1px solid black;
 }
@@ -147,32 +152,36 @@ main section{
 
 #welcome-section #profile p {
     margin-top: -.2rem;
-    border: 1px solid black;
 }
+
 #welcome-section #profile .profile-container2 {
     padding-left: .5rem;
     padding-top: 2.1rem;
 }
 
+/*end profile*/
+
+/*about*/
+
+#welcome-section #about {
+    padding: 6rem;
+}
 /*end about*/
 
 /*skills*/
 #projects {
-
     border: 1px solid black;
 }
 /*end skills*/
 
 /*services*/
 #services {
-
     border: 1px solid black;
 }
 /*end services*/
 
 /*contact*/
 #contact {
-
     border: 1px solid black;
 }
 /*end contact*/
